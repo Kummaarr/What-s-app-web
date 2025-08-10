@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: whatsapp-clone
+    env: docker
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        sync: false
