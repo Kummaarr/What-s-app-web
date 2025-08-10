@@ -42,3 +42,17 @@ uvicorn main:socket_app --reload --host 0.0.0.0 --port 8000
 
 ## Setup MongoDB
 - Create a free cluster on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
+
+**#Structure**
+backend/
+  main.py
+  requirements.txt
+  load_sample_data.py
+  static/   (optional at first)
+frontend/
+  package.json
+  src/
+Dockerfile
+render.yaml
+README.md
+.env.example
