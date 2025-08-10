@@ -39,3 +39,6 @@ python load_sample_data.py
 
 # 5. Run the backend server
 uvicorn main:socket_app --reload --host 0.0.0.0 --port 8000
+
+## Setup MongoDB
+- Create a free cluster on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
