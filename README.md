@@ -15,32 +15,27 @@ A WhatsApp Web–like clone with:
 ### Requirements
 - Python **3.10+**
 - Node.js **16+**
-- MongoDB running locally or Atlas URI
+- MongoDB running locally
 
 ### Steps
-```bash
-# 1. Unzip the project
-unzip whatsapp_web_clone_hybrid.zip
-cd whatsapp_web_clone_hybrid
-
-# 2. Install frontend
+# 1. Install frontend
 cd frontend
 npm install
 npm run build
 cd ..
 
-# 3. Install backend
+# 2. Install backend
 cd backend
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-# 4. Copy frontend build into backend/static
+# 3. Copy frontend build into backend/static
 mkdir -p static
 cp -r ../frontend/dist/* ./static/
 
-# 5. (Optional) Load sample data
+# 4. Load sample data
 python load_sample_data.py
 
-# 6. Run the backend server
+# 5. Run the backend server
 uvicorn main:socket_app --reload --host 0.0.0.0 --port 8000
